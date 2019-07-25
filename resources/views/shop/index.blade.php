@@ -16,7 +16,7 @@ Laravel Shopping Cart
 			<p> {{$product->description}}</p>
 		</div>
 		<div class="pull-left price">${{$product->price}}</div>
-		<div class="clearfix"><a href="#" class="btn btn-success pull-right" role="button">Add to Cart</a></div>
+		<div class="clearfix"><a href="{{route('product.addToCart',$product->id)}}" class="btn btn-success pull-right" role="button">Add to Cart</a></div>
 		
 
 	</div>
